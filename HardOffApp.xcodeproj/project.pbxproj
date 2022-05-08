@@ -87,9 +87,9 @@
 			children = (
 				40926F01282762640027A51C /* TabBarController.swift */,
 				40926EF7282761350027A51C /* HomeViewController.swift */,
+				40926EF92827615D0027A51C /* SearchViewController.swift */,
 				40926EFD2827617A0027A51C /* ShoppingViewController.swift */,
 				40926EFB2827616D0027A51C /* TravelViewController.swift */,
-				40926EF92827615D0027A51C /* SearchViewController.swift */,
 				40926EFF282761850027A51C /* MyPageViewController.swift */,
 				40926F06282768B40027A51C /* HomeTableViewCell.swift */,
 			);

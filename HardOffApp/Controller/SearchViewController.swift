@@ -50,7 +50,7 @@ extension SearchViewController: CLLocationManagerDelegate {
                 locInfo = locInfo + "PostalCode: \(placemark.postalCode ?? "")\n"
                 locInfo = locInfo + "Name: \(placemark.name ?? "")"
                 
-                self.shopLabel.text = locInfo
+                //self.shopLabel.text = locInfo
             }
         })
         
@@ -58,7 +58,7 @@ extension SearchViewController: CLLocationManagerDelegate {
         shopmap.setRegion(cr, animated: true)
         
         let pa = MKPointAnnotation()
-        pa.title = "I'm here!"
+        pa.title = "ここにいるよ!"
         pa.coordinate = loc.coordinate
         shopmap.removeAnnotations(shopmap.annotations)
         shopmap.addAnnotation(pa)
