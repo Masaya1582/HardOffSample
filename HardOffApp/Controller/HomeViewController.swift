@@ -4,6 +4,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    @IBOutlet weak var statusButton: UIButton!
     @IBOutlet weak var carImgeView: UIImageView!
     @IBOutlet weak var shopbutton: UIButton!
     @IBOutlet weak var codeImageView: UIImageView!
@@ -19,6 +20,7 @@ class HomeViewController: UIViewController {
     
     private func setupView(){
         shopbutton.layer.cornerRadius = 20.0
+        statusButton.layer.cornerRadius = 10.0
         carImgeView.image = UIImage(named: "car.png")
         codeImageView.image = UIImage(named: "barcode.jpeg")
     }
