@@ -32,7 +32,7 @@ class HomeViewController: UIViewController {
         shopbutton.layer.cornerRadius = 10.0
         statusButton.layer.cornerRadius = 10.0
         carImgeView.image = UIImage(named: "car.png")
-        codeImageView.image = UIImage(named: "barcode.jpeg")
+        codeImageView.image = UIImage(named: "barcode.svg")
     }
     
     //tableViewの初期設定
@@ -63,7 +63,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "shopCell", for: indexPath) as! HomeTableViewCell
-        cell.hardoffImageView.image = UIImage(named: "hardoff.png")
+        cell.hardoffImageView.image = UIImage(named: "hardoff.jpeg")
         cell.shopLabel.text = shopArray[indexPath.row]
         return cell
     }

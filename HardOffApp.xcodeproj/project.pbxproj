@@ -102,8 +102,6 @@
 				40926F052827686A0027A51C /* Model */,
 				40926F04282768610027A51C /* View */,
 				40926F03282768320027A51C /* Controller */,
-				40926EEC282760A80027A51C /* Assets.xcassets */,
-				40926EEE282760A80027A51C /* LaunchScreen.storyboard */,
 				40926EF1282760A80027A51C /* Info.plist */,
 				40926F2C2828996A0027A51C /* pc.json */,
 				40926F2E2828A4C20027A51C /* car.json */,
@@ -132,6 +130,8 @@
 				40926EE9282760A80027A51C /* Main.storyboard */,
 				40926F07282768B40027A51C /* HomeTableViewCell.xib */,
 				40926F312828A85F0027A51C /* TravelTableViewCell.xib */,
+				40926EEE282760A80027A51C /* LaunchScreen.storyboard */,
+				40926EEC282760A80027A51C /* Assets.xcassets */,
 			);
 			path = View;
 			sourceTree = "<group>";
