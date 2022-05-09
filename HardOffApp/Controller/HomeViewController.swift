@@ -19,7 +19,7 @@ class HomeViewController: UIViewController {
     }
     
     private func setupView(){
-        shopbutton.layer.cornerRadius = 20.0
+        shopbutton.layer.cornerRadius = 10.0
         statusButton.layer.cornerRadius = 10.0
         carImgeView.image = UIImage(named: "car.png")
         codeImageView.image = UIImage(named: "barcode.jpeg")
