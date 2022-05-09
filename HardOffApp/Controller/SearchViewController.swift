@@ -5,21 +5,23 @@ import MapKit
 class SearchViewController: UIViewController {
     
     @IBOutlet weak var shopmap: MKMapView!
+    @IBOutlet weak var shopLabel: UILabel!
     
     let locationManager = CLLocationManager()
-    @IBOutlet weak var shopLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupMapView()
     }
     
+    //地図表示の初期設定
     private func setupMapView(){
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
     }
     
+    //現在地を取得する
     @IBAction func currentLocation(_ sender: Any) {
         locationManager.requestLocation()
     }
@@ -27,6 +29,7 @@ class SearchViewController: UIViewController {
     
 }
 
+//地図の詳細設定
 extension SearchViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let loc = locations.last else { return }

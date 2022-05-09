@@ -21,6 +21,10 @@
 		40926F08282768B40027A51C /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40926F06282768B40027A51C /* HomeTableViewCell.swift */; };
 		40926F09282768B40027A51C /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40926F07282768B40027A51C /* HomeTableViewCell.xib */; };
 		40926F2D2828996A0027A51C /* pc.json in Resources */ = {isa = PBXBuildFile; fileRef = 40926F2C2828996A0027A51C /* pc.json */; };
+		40926F2F2828A4C20027A51C /* car.json in Resources */ = {isa = PBXBuildFile; fileRef = 40926F2E2828A4C20027A51C /* car.json */; };
+		40926F322828A85F0027A51C /* TravelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40926F302828A85F0027A51C /* TravelTableViewCell.swift */; };
+		40926F332828A85F0027A51C /* TravelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40926F312828A85F0027A51C /* TravelTableViewCell.xib */; };
+		40926F352828AAB50027A51C /* Prefecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40926F342828AAB50027A51C /* Prefecture.swift */; };
 		DAEF4542B63814414691E5AD /* Pods_HardOffApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 801265A387BE1B74F8A923C4 /* Pods_HardOffApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +46,10 @@
 		40926F06282768B40027A51C /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		40926F07282768B40027A51C /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		40926F2C2828996A0027A51C /* pc.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pc.json; sourceTree = "<group>"; };
+		40926F2E2828A4C20027A51C /* car.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = car.json; sourceTree = "<group>"; };
+		40926F302828A85F0027A51C /* TravelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelTableViewCell.swift; sourceTree = "<group>"; };
+		40926F312828A85F0027A51C /* TravelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TravelTableViewCell.xib; sourceTree = "<group>"; };
+		40926F342828AAB50027A51C /* Prefecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prefecture.swift; sourceTree = "<group>"; };
 		6155C08BE4CB27FC365BFB04 /* Pods-HardOffApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HardOffApp.release.xcconfig"; path = "Target Support Files/Pods-HardOffApp/Pods-HardOffApp.release.xcconfig"; sourceTree = "<group>"; };
 		801265A387BE1B74F8A923C4 /* Pods_HardOffApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HardOffApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -96,6 +104,7 @@
 				40926EEE282760A80027A51C /* LaunchScreen.storyboard */,
 				40926EF1282760A80027A51C /* Info.plist */,
 				40926F2C2828996A0027A51C /* pc.json */,
+				40926F2E2828A4C20027A51C /* car.json */,
 			);
 			path = HardOffApp;
 			sourceTree = "<group>";
@@ -110,6 +119,7 @@
 				40926EFB2827616D0027A51C /* TravelViewController.swift */,
 				40926EFF282761850027A51C /* MyPageViewController.swift */,
 				40926F06282768B40027A51C /* HomeTableViewCell.swift */,
+				40926F302828A85F0027A51C /* TravelTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -119,6 +129,7 @@
 			children = (
 				40926EE9282760A80027A51C /* Main.storyboard */,
 				40926F07282768B40027A51C /* HomeTableViewCell.xib */,
+				40926F312828A85F0027A51C /* TravelTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -126,6 +137,7 @@
 		40926F052827686A0027A51C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				40926F342828AAB50027A51C /* Prefecture.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -200,7 +212,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				40926EF0282760A80027A51C /* LaunchScreen.storyboard in Resources */,
+				40926F332828A85F0027A51C /* TravelTableViewCell.xib in Resources */,
 				40926EED282760A80027A51C /* Assets.xcassets in Resources */,
+				40926F2F2828A4C20027A51C /* car.json in Resources */,
 				40926F09282768B40027A51C /* HomeTableViewCell.xib in Resources */,
 				40926F2D2828996A0027A51C /* pc.json in Resources */,
 				40926EEB282760A80027A51C /* Main.storyboard in Resources */,
@@ -259,6 +273,8 @@
 				40926EE4282760A80027A51C /* AppDelegate.swift in Sources */,
 				40926F02282762640027A51C /* TabBarController.swift in Sources */,
 				40926EE6282760A80027A51C /* SceneDelegate.swift in Sources */,
+				40926F352828AAB50027A51C /* Prefecture.swift in Sources */,
+				40926F322828A85F0027A51C /* TravelTableViewCell.swift in Sources */,
 				40926F00282761850027A51C /* MyPageViewController.swift in Sources */,
 				40926EFA2827615D0027A51C /* SearchViewController.swift in Sources */,
 				40926EF8282761350027A51C /* HomeViewController.swift in Sources */,
