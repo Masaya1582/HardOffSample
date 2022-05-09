@@ -20,9 +20,12 @@
 		40926F02282762640027A51C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40926F01282762640027A51C /* TabBarController.swift */; };
 		40926F08282768B40027A51C /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40926F06282768B40027A51C /* HomeTableViewCell.swift */; };
 		40926F09282768B40027A51C /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40926F07282768B40027A51C /* HomeTableViewCell.xib */; };
+		40926F2D2828996A0027A51C /* pc.json in Resources */ = {isa = PBXBuildFile; fileRef = 40926F2C2828996A0027A51C /* pc.json */; };
+		DAEF4542B63814414691E5AD /* Pods_HardOffApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 801265A387BE1B74F8A923C4 /* Pods_HardOffApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2FDD2FCCFAF22A453104751E /* Pods-HardOffApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HardOffApp.debug.xcconfig"; path = "Target Support Files/Pods-HardOffApp/Pods-HardOffApp.debug.xcconfig"; sourceTree = "<group>"; };
 		40926EE0282760A80027A51C /* HardOffApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HardOffApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40926EE3282760A80027A51C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40926EE5282760A80027A51C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +41,9 @@
 		40926F01282762640027A51C /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		40926F06282768B40027A51C /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		40926F07282768B40027A51C /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		40926F2C2828996A0027A51C /* pc.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pc.json; sourceTree = "<group>"; };
+		6155C08BE4CB27FC365BFB04 /* Pods-HardOffApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HardOffApp.release.xcconfig"; path = "Target Support Files/Pods-HardOffApp/Pods-HardOffApp.release.xcconfig"; sourceTree = "<group>"; };
+		801265A387BE1B74F8A923C4 /* Pods_HardOffApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HardOffApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,17 +51,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAEF4542B63814414691E5AD /* Pods_HardOffApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		247C6E959AC4E5627522048D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				801265A387BE1B74F8A923C4 /* Pods_HardOffApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		40926ED7282760A80027A51C = {
 			isa = PBXGroup;
 			children = (
 				40926EE2282760A80027A51C /* HardOffApp */,
 				40926EE1282760A80027A51C /* Products */,
+				D3102D69010FF053D8C7AB23 /* Pods */,
+				247C6E959AC4E5627522048D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +95,7 @@
 				40926EEC282760A80027A51C /* Assets.xcassets */,
 				40926EEE282760A80027A51C /* LaunchScreen.storyboard */,
 				40926EF1282760A80027A51C /* Info.plist */,
+				40926F2C2828996A0027A51C /* pc.json */,
 			);
 			path = HardOffApp;
 			sourceTree = "<group>";
@@ -112,6 +130,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		D3102D69010FF053D8C7AB23 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2FDD2FCCFAF22A453104751E /* Pods-HardOffApp.debug.xcconfig */,
+				6155C08BE4CB27FC365BFB04 /* Pods-HardOffApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +146,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40926EF4282760A80027A51C /* Build configuration list for PBXNativeTarget "HardOffApp" */;
 			buildPhases = (
+				EC149BD0235E66044411F14E /* [CP] Check Pods Manifest.lock */,
 				40926EDC282760A80027A51C /* Sources */,
 				40926EDD282760A80027A51C /* Frameworks */,
 				40926EDE282760A80027A51C /* Resources */,
+				F5B0E49722370E2002D603A6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -173,11 +202,54 @@
 				40926EF0282760A80027A51C /* LaunchScreen.storyboard in Resources */,
 				40926EED282760A80027A51C /* Assets.xcassets in Resources */,
 				40926F09282768B40027A51C /* HomeTableViewCell.xib in Resources */,
+				40926F2D2828996A0027A51C /* pc.json in Resources */,
 				40926EEB282760A80027A51C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EC149BD0235E66044411F14E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HardOffApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5B0E49722370E2002D603A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HardOffApp/Pods-HardOffApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HardOffApp/Pods-HardOffApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HardOffApp/Pods-HardOffApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		40926EDC282760A80027A51C /* Sources */ = {
@@ -334,6 +406,7 @@
 		};
 		40926EF5282760A80027A51C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FDD2FCCFAF22A453104751E /* Pods-HardOffApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -363,6 +436,7 @@
 		};
 		40926EF6282760A80027A51C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6155C08BE4CB27FC365BFB04 /* Pods-HardOffApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

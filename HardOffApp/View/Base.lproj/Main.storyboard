@@ -48,6 +48,11 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain"/>
                                     </button>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MHO-C0-c5k" customClass="LottieView" customModule="Lottie">
+                                        <rect key="frame" x="145" y="162" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.84705882352941175" green="0.95294117647058818" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
@@ -129,6 +134,7 @@
                     <connections>
                         <outlet property="carImgeView" destination="X7F-EH-poB" id="yox-cQ-ebx"/>
                         <outlet property="codeImageView" destination="6iu-bu-nGP" id="eda-if-OrX"/>
+                        <outlet property="lottieView" destination="MHO-C0-c5k" id="hug-Va-muw"/>
                         <outlet property="shopbutton" destination="QHh-op-OOf" id="Fij-mO-kxx"/>
                         <outlet property="statusButton" destination="dxu-SK-KEO" id="Pu5-QT-THu"/>
                         <outlet property="tableView" destination="y72-R2-hXo" id="MSE-4X-3tg"/>

@@ -1,6 +1,7 @@
 
 
 import UIKit
+import Lottie
 
 class HomeViewController: UIViewController {
     
@@ -9,6 +10,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var shopbutton: UIButton!
     @IBOutlet weak var codeImageView: UIImageView!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var lottieView: LottieView!
     
     private var shopArray = ["四日市店", "桑名店","朝日店","日永店","津店"]
     
@@ -16,6 +18,11 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         setupView()
         setupTV()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        showAnimation()
     }
     
     private func setupView(){
@@ -29,6 +36,16 @@ class HomeViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "HomeTableViewCell", bundle: nil), forCellReuseIdentifier: "shopCell")
+    }
+    
+    private func showAnimation() {
+        let animationView = AnimationView(name: "pc")
+        animationView.frame = lottieView.bounds
+        animationView.center = self.lottieView.center
+        animationView.loopMode = .loop
+        animationView.animationSpeed = 1
+        view.addSubview(animationView)
+        animationView.play()
     }
     
 }
