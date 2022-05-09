@@ -25,17 +25,17 @@
                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2X-qG-C8z">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2X-qG-C8z">
                         <rect key="frame" x="190" y="22" width="70" height="21"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="70" id="LXR-Qp-3po"/>
+                            <constraint firstAttribute="width" constant="70" id="ncg-qW-Lbx"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fmm-Wz-Uso">
-                        <rect key="frame" x="263" y="22" width="12" height="20"/>
+                        <rect key="frame" x="268" y="22" width="17" height="20"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system"/>
@@ -45,16 +45,16 @@
                     </button>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="D2X-qG-C8z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="22" id="3dP-0i-erM"/>
+                    <constraint firstItem="D2X-qG-C8z" firstAttribute="leading" secondItem="iI5-qG-I6E" secondAttribute="trailing" constant="115" id="83B-Hd-CKl"/>
                     <constraint firstItem="iI5-qG-I6E" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="9x1-Q0-Xem"/>
                     <constraint firstItem="iI5-qG-I6E" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="22" id="GMT-MD-b40"/>
-                    <constraint firstItem="Fmm-Wz-Uso" firstAttribute="leading" secondItem="D2X-qG-C8z" secondAttribute="trailing" constant="3" id="LK0-9c-otT"/>
-                    <constraint firstAttribute="bottom" secondItem="Fmm-Wz-Uso" secondAttribute="bottom" constant="23" id="LXm-hU-Ejv"/>
-                    <constraint firstAttribute="trailing" secondItem="Fmm-Wz-Uso" secondAttribute="trailing" constant="10" id="b3y-cC-96E"/>
-                    <constraint firstItem="D2X-qG-C8z" firstAttribute="leading" secondItem="iI5-qG-I6E" secondAttribute="trailing" constant="115" id="kZr-w0-QcA"/>
-                    <constraint firstAttribute="bottom" secondItem="D2X-qG-C8z" secondAttribute="bottom" constant="22" id="lcT-MO-p42"/>
+                    <constraint firstItem="Fmm-Wz-Uso" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="22" id="MUe-57-Utz"/>
+                    <constraint firstItem="D2X-qG-C8z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="22" id="W7a-GD-rwn"/>
+                    <constraint firstItem="Fmm-Wz-Uso" firstAttribute="leading" secondItem="D2X-qG-C8z" secondAttribute="trailing" constant="8" id="oCR-1d-QZF"/>
                     <constraint firstAttribute="bottom" secondItem="iI5-qG-I6E" secondAttribute="bottom" constant="22" id="osf-0a-Ulc"/>
-                    <constraint firstItem="Fmm-Wz-Uso" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="22" id="rES-Ge-mIe"/>
+                    <constraint firstAttribute="bottom" secondItem="D2X-qG-C8z" secondAttribute="bottom" constant="22" id="vUq-OJ-Jht"/>
+                    <constraint firstAttribute="trailing" secondItem="Fmm-Wz-Uso" secondAttribute="trailing" id="wwb-6C-Bhf"/>
+                    <constraint firstAttribute="bottom" secondItem="Fmm-Wz-Uso" secondAttribute="bottom" constant="23" id="xoo-dW-gf6"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

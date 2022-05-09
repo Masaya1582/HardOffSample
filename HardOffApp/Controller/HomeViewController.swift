@@ -13,7 +13,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var lottieView: LottieView!
     
     //店舗リストの項目
-    private var shopArray = ["四日市店", "桑名店","朝日店","日永店","津店"]
+    private let shopArray = ["四日市店", "桑名店","朝日店","日永店","津店"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

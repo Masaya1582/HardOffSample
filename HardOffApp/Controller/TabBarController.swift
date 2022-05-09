@@ -9,7 +9,7 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
         setupTabStyle()
     }
     
-    func setupTabStyle() {
+    private func setupTabStyle() {
         // タブアイコンの色
         self.tabBar.tintColor = UIColor(red: 1.0, green: 0.44, blue: 0.11, alpha: 1)
         // タブバーの背景色

@@ -4,6 +4,12 @@ import Foundation
 
 //クラスを定義
 class Prefecture {
+    
+    let prefecName: String
+    
+    init(prefecText: String) {
+        prefecName = prefecText
+    }
     //定数の定義
     let pref1 = "北海道"
     let pref2 = "青森県"

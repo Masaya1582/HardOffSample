@@ -1,4 +1,5 @@
 
+
 import UIKit
 import MapKit
 
@@ -7,7 +8,7 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var shopmap: MKMapView!
     @IBOutlet weak var shopLabel: UILabel!
     
-    let locationManager = CLLocationManager()
+    private let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +26,6 @@ class SearchViewController: UIViewController {
     @IBAction func currentLocation(_ sender: Any) {
         locationManager.requestLocation()
     }
-    
     
 }
 

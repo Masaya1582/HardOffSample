@@ -25,6 +25,7 @@
 		40926F322828A85F0027A51C /* TravelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40926F302828A85F0027A51C /* TravelTableViewCell.swift */; };
 		40926F332828A85F0027A51C /* TravelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40926F312828A85F0027A51C /* TravelTableViewCell.xib */; };
 		40926F352828AAB50027A51C /* Prefecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40926F342828AAB50027A51C /* Prefecture.swift */; };
+		40926F372828B3580027A51C /* PrefecList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40926F362828B3580027A51C /* PrefecList.swift */; };
 		DAEF4542B63814414691E5AD /* Pods_HardOffApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 801265A387BE1B74F8A923C4 /* Pods_HardOffApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		40926F302828A85F0027A51C /* TravelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelTableViewCell.swift; sourceTree = "<group>"; };
 		40926F312828A85F0027A51C /* TravelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TravelTableViewCell.xib; sourceTree = "<group>"; };
 		40926F342828AAB50027A51C /* Prefecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prefecture.swift; sourceTree = "<group>"; };
+		40926F362828B3580027A51C /* PrefecList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefecList.swift; sourceTree = "<group>"; };
 		6155C08BE4CB27FC365BFB04 /* Pods-HardOffApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HardOffApp.release.xcconfig"; path = "Target Support Files/Pods-HardOffApp/Pods-HardOffApp.release.xcconfig"; sourceTree = "<group>"; };
 		801265A387BE1B74F8A923C4 /* Pods_HardOffApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HardOffApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -115,8 +117,8 @@
 				40926F01282762640027A51C /* TabBarController.swift */,
 				40926EF7282761350027A51C /* HomeViewController.swift */,
 				40926EF92827615D0027A51C /* SearchViewController.swift */,
-				40926EFD2827617A0027A51C /* ShoppingViewController.swift */,
 				40926EFB2827616D0027A51C /* TravelViewController.swift */,
+				40926EFD2827617A0027A51C /* ShoppingViewController.swift */,
 				40926EFF282761850027A51C /* MyPageViewController.swift */,
 				40926F06282768B40027A51C /* HomeTableViewCell.swift */,
 				40926F302828A85F0027A51C /* TravelTableViewCell.swift */,
@@ -138,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				40926F342828AAB50027A51C /* Prefecture.swift */,
+				40926F362828B3580027A51C /* PrefecList.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				40926F00282761850027A51C /* MyPageViewController.swift in Sources */,
 				40926EFA2827615D0027A51C /* SearchViewController.swift in Sources */,
 				40926EF8282761350027A51C /* HomeViewController.swift in Sources */,
+				40926F372828B3580027A51C /* PrefecList.swift in Sources */,
 				40926F08282768B40027A51C /* HomeTableViewCell.swift in Sources */,
 				40926EFE2827617A0027A51C /* ShoppingViewController.swift in Sources */,
 				40926EFC2827616D0027A51C /* TravelViewController.swift in Sources */,

@@ -8,7 +8,7 @@ class TravelViewController: UIViewController {
     @IBOutlet weak var lottieView: LottieView!
     @IBOutlet weak var tableView: UITableView!
     
-    private var prefecArray = ["北海道","北海道","北海道","北海道","北海道","北海道","北海道","北海道","北海道"]
+    private let prefecArray = ["北海道","青森県","秋田県","宮城県","福島県","山形県","山梨県","長野県","新潟県"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,6 +48,7 @@ extension TravelViewController: UITableViewDelegate, UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "travelCell", for: indexPath) as! TravelTableViewCell
+        cell.selectionStyle = UITableViewCell.SelectionStyle.none
         cell.prefecLabel.text = prefecArray[indexPath.row]
         cell.numberLabel.text = "000/066"
         return cell
