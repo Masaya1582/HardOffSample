@@ -14,7 +14,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g9g-sV-uAK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="526" y="-218"/>
+            <point key="canvasLocation" x="492" y="-101"/>
         </scene>
         <!--Search-->
         <scene sceneID="H6W-ww-SUY">
@@ -24,7 +24,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="emr-lk-aIo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="530" y="-151"/>
+            <point key="canvasLocation" x="498" y="9"/>
         </scene>
         <!--Travel-->
         <scene sceneID="YJh-wB-nSn">
@@ -34,7 +34,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="22O-rm-BEN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="526" y="-71"/>
+            <point key="canvasLocation" x="510" y="96"/>
         </scene>
         <!--Shopping-->
         <scene sceneID="oRP-Sa-ghk">
@@ -44,7 +44,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HME-tJ-sFd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="518" y="9"/>
+            <point key="canvasLocation" x="509" y="192"/>
         </scene>
         <!--MyPage-->
         <scene sceneID="G7B-Mj-yr3">
@@ -54,7 +54,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4nR-6l-w9V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="517" y="74"/>
+            <point key="canvasLocation" x="515" y="284"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="GLq-tp-4uu">

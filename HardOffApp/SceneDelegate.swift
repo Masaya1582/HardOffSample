@@ -1,9 +1,4 @@
-//
-//  SceneDelegate.swift
-//  HardOffApp
-//
-//  Created by Cookie-san on 2022/05/08.
-//
+
 
 import UIKit
 

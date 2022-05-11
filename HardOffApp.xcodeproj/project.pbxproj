@@ -128,8 +128,7 @@
 				40926EFB2827616D0027A51C /* TravelViewController.swift */,
 				40926EFD2827617A0027A51C /* ShoppingViewController.swift */,
 				40926EFF282761850027A51C /* MyPageViewController.swift */,
-				40926F06282768B40027A51C /* HomeTableViewCell.swift */,
-				40926F302828A85F0027A51C /* TravelTableViewCell.swift */,
+				40D3EE90282B5740006BE994 /* Cell Style */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -164,6 +163,15 @@
 			children = (
 				40926F07282768B40027A51C /* HomeTableViewCell.xib */,
 				40926F312828A85F0027A51C /* TravelTableViewCell.xib */,
+			);
+			path = "Cell Style";
+			sourceTree = "<group>";
+		};
+		40D3EE90282B5740006BE994 /* Cell Style */ = {
+			isa = PBXGroup;
+			children = (
+				40926F06282768B40027A51C /* HomeTableViewCell.swift */,
+				40926F302828A85F0027A51C /* TravelTableViewCell.swift */,
 			);
 			path = "Cell Style";
 			sourceTree = "<group>";
