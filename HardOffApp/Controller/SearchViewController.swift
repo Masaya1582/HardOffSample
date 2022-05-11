@@ -1,5 +1,3 @@
-
-
 import UIKit
 import MapKit
 
@@ -16,7 +14,7 @@ class SearchViewController: UIViewController {
     }
     
     //地図表示の初期設定
-    private func setupMapView(){
+    private func setupMapView() {
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
@@ -41,20 +39,18 @@ extension SearchViewController: CLLocationManagerDelegate {
                 return
             }
             
-            if let placemark = placemarks?[0] {
-                
-                var locInfo = ""
-                locInfo = locInfo + "Latitude: \(loc.coordinate.latitude)\n"
-                locInfo = locInfo + "Longitude: \(loc.coordinate.longitude)\n\n"
-                
-                locInfo = locInfo + "Country: \(placemark.country ?? "")\n"
-                locInfo = locInfo + "State/Province: \(placemark.administrativeArea ?? "")\n"
-                locInfo = locInfo + "City: \(placemark.locality ?? "")\n"
-                locInfo = locInfo + "PostalCode: \(placemark.postalCode ?? "")\n"
-                locInfo = locInfo + "Name: \(placemark.name ?? "")"
-                
-                //self.shopLabel.text = locInfo
-            }
+            guard let placemark = placemarks?.first else { return }
+            let locInfo =
+                """
+                Latitude: \(loc.coordinate.latitude)
+                Longitude: \(loc.coordinate.longitude)
+                Country: \(placemark.country ?? "")
+                State/Province: \(placemark.administrativeArea ?? "")
+                City: \(placemark.locality ?? "")
+                PostalCode: \(placemark.postalCode ?? "")
+                Name: \(placemark.name ?? "")
+                """
+            print(locInfo)
         })
         
         let cr = MKCoordinateRegion(center: loc.coordinate, latitudinalMeters: 500, longitudinalMeters: 500)

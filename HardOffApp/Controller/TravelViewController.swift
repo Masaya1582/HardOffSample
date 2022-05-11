@@ -15,6 +15,7 @@ class TravelViewController: UIViewController {
         setupTV()
     }
     
+    //アニメーションをAppearの時点で再生する(didloadだと画面から戻ってきた時に止まることがある)
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         showAnimation()

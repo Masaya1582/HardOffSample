@@ -2,16 +2,21 @@
 
 import UIKit
 
+enum CellTag: Int {
+    case mollCell
+    case aboutCell
+}
+
 class MyPageViewController: UIViewController {
     
-    @IBOutlet weak var firstView: UIView!
-    @IBOutlet weak var secondView: UIView!
-    @IBOutlet weak var thirdView: UIView!
-    @IBOutlet weak var forthView: UIView!
-    @IBOutlet weak var fifthView: UIView!
-    @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var tableView1: UITableView!
-    @IBOutlet weak var tableView2: UITableView!
+    @IBOutlet private weak var firstView: UIView!
+    @IBOutlet private weak var secondView: UIView!
+    @IBOutlet private weak var thirdView: UIView!
+    @IBOutlet private weak var forthView: UIView!
+    @IBOutlet private weak var fifthView: UIView!
+    @IBOutlet private weak var imageView: UIImageView!
+    @IBOutlet private weak var tableView1: UITableView!
+    @IBOutlet private weak var tableView2: UITableView!
     
     private var items1: NSMutableArray = ["注文履歴", "送料計算リスト"]
     private var items2: NSMutableArray = ["テスト","テスト","テスト","テスト","テスト","テスト",]
@@ -28,12 +33,13 @@ class MyPageViewController: UIViewController {
     }
     
     private func setupView() {
-        firstView.layer.cornerRadius = 20.0
-        secondView.layer.cornerRadius = 20.0
-        thirdView.layer.cornerRadius = 20.0
-        forthView.layer.cornerRadius = 20.0
-        fifthView.layer.cornerRadius = 20.0
-        imageView.image = UIImage(named: "kaitori.jpeg")
+        let borderRadius: CGFloat = 20.0
+        firstView.layer.cornerRadius = borderRadius
+        secondView.layer.cornerRadius = borderRadius
+        thirdView.layer.cornerRadius = borderRadius
+        forthView.layer.cornerRadius = borderRadius
+        fifthView.layer.cornerRadius = borderRadius
+        imageView.image = ConstUIImage.kaitori
     }
     
     private func setupTV() {
@@ -45,32 +51,19 @@ class MyPageViewController: UIViewController {
         items.append(items2)
     }
     
-    // 処理を分岐するメソッド
-    private func checkTableView(_ tableView: UITableView) -> Void{
-        if tableView.tag == 1 {
-            tag = 1
-            cellIdentifier = "mollCell"
-        }
-        else if tableView.tag == 2 {
-            tag = 2
-            cellIdentifier = "aboutCell"
-        }
-    }
-    
 }
 
 //tableViewの表示設定
 extension MyPageViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        checkTableView(tableView)
-        return items[tag].count
+        return items[tableView.tag].count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        checkTableView(tableView)
+        let cellIdentifier = tableView.tag == CellTag.mollCell.rawValue ? "mollCell" : "aboutCell"
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
-        cell.selectionStyle = UITableViewCell.SelectionStyle.none
-        cell.textLabel?.text = items[tag][indexPath.row] as? String
+        cell.selectionStyle = .none
+        cell.textLabel?.text = items[tableView.tag][indexPath.row] as? String
         cell.textLabel?.textColor = .black
         return cell
     }
