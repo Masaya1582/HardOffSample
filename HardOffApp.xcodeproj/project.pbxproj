@@ -26,6 +26,11 @@
 		40926F332828A85F0027A51C /* TravelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40926F312828A85F0027A51C /* TravelTableViewCell.xib */; };
 		40926F352828AAB50027A51C /* Prefecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40926F342828AAB50027A51C /* Prefecture.swift */; };
 		40926F372828B3580027A51C /* PrefecList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40926F362828B3580027A51C /* PrefecList.swift */; };
+		40D3EE86282B52B8006BE994 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40D3EE85282B52B8006BE994 /* Home.storyboard */; };
+		40D3EE88282B5318006BE994 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40D3EE87282B5318006BE994 /* Search.storyboard */; };
+		40D3EE8A282B537F006BE994 /* Travel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40D3EE89282B537F006BE994 /* Travel.storyboard */; };
+		40D3EE8C282B53D9006BE994 /* Shopping.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40D3EE8B282B53D9006BE994 /* Shopping.storyboard */; };
+		40D3EE8E282B5440006BE994 /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40D3EE8D282B5440006BE994 /* MyPage.storyboard */; };
 		DAEF4542B63814414691E5AD /* Pods_HardOffApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 801265A387BE1B74F8A923C4 /* Pods_HardOffApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +57,11 @@
 		40926F312828A85F0027A51C /* TravelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TravelTableViewCell.xib; sourceTree = "<group>"; };
 		40926F342828AAB50027A51C /* Prefecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prefecture.swift; sourceTree = "<group>"; };
 		40926F362828B3580027A51C /* PrefecList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefecList.swift; sourceTree = "<group>"; };
+		40D3EE85282B52B8006BE994 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		40D3EE87282B5318006BE994 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		40D3EE89282B537F006BE994 /* Travel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Travel.storyboard; sourceTree = "<group>"; };
+		40D3EE8B282B53D9006BE994 /* Shopping.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Shopping.storyboard; sourceTree = "<group>"; };
+		40D3EE8D282B5440006BE994 /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
 		6155C08BE4CB27FC365BFB04 /* Pods-HardOffApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HardOffApp.release.xcconfig"; path = "Target Support Files/Pods-HardOffApp/Pods-HardOffApp.release.xcconfig"; sourceTree = "<group>"; };
 		801265A387BE1B74F8A923C4 /* Pods_HardOffApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HardOffApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -128,6 +138,11 @@
 			isa = PBXGroup;
 			children = (
 				40926EE9282760A80027A51C /* Main.storyboard */,
+				40D3EE85282B52B8006BE994 /* Home.storyboard */,
+				40D3EE87282B5318006BE994 /* Search.storyboard */,
+				40D3EE89282B537F006BE994 /* Travel.storyboard */,
+				40D3EE8B282B53D9006BE994 /* Shopping.storyboard */,
+				40D3EE8D282B5440006BE994 /* MyPage.storyboard */,
 				40926F07282768B40027A51C /* HomeTableViewCell.xib */,
 				40926F312828A85F0027A51C /* TravelTableViewCell.xib */,
 				40926EEE282760A80027A51C /* LaunchScreen.storyboard */,
@@ -217,10 +232,15 @@
 				40926EF0282760A80027A51C /* LaunchScreen.storyboard in Resources */,
 				40926F332828A85F0027A51C /* TravelTableViewCell.xib in Resources */,
 				40926EED282760A80027A51C /* Assets.xcassets in Resources */,
+				40D3EE8C282B53D9006BE994 /* Shopping.storyboard in Resources */,
 				40926F2F2828A4C20027A51C /* car.json in Resources */,
+				40D3EE88282B5318006BE994 /* Search.storyboard in Resources */,
 				40926F09282768B40027A51C /* HomeTableViewCell.xib in Resources */,
+				40D3EE8E282B5440006BE994 /* MyPage.storyboard in Resources */,
 				40926F2D2828996A0027A51C /* pc.json in Resources */,
 				40926EEB282760A80027A51C /* Main.storyboard in Resources */,
+				40D3EE8A282B537F006BE994 /* Travel.storyboard in Resources */,
+				40D3EE86282B52B8006BE994 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
