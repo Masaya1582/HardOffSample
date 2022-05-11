@@ -10,9 +10,16 @@ class MyPageViewController: UIViewController {
     @IBOutlet weak var forthView: UIView!
     @IBOutlet weak var fifthView: UIView!
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableView1: UITableView!
+    @IBOutlet weak var tableView2: UITableView!
     
-    private let mollArray = ["注文履歴", "送料計算リスト"]
+    private var items1: NSMutableArray = ["注文履歴", "送料計算リスト"]
+    private var items2: NSMutableArray = ["テスト","テスト","テスト","テスト","テスト","テスト",]
+    private var items: [NSMutableArray] = []
+    
+    // 処理分岐用
+    private var tag = 0
+    private var cellIdentifier = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,25 +37,43 @@ class MyPageViewController: UIViewController {
     }
     
     private func setupTV() {
-        tableView.delegate = self
-        tableView.dataSource = self
+        tableView1.delegate = self
+        tableView1.dataSource = self
+        tableView2.delegate = self
+        tableView2.dataSource = self
+        items.append(items1)
+        items.append(items2)
     }
-
+    
+    // 処理を分岐するメソッド
+    private func checkTableView(_ tableView: UITableView) -> Void{
+        if tableView.tag == 1 {
+            tag = 1
+            cellIdentifier = "mollCell"
+        }
+        else if tableView.tag == 2 {
+            tag = 2
+            cellIdentifier = "aboutCell"
+        }
+    }
+    
 }
 
 //tableViewの表示設定
 extension MyPageViewController: UITableViewDelegate, UITableViewDataSource {
-
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return mollArray.count
+        checkTableView(tableView)
+        return items[tag].count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        checkTableView(tableView)
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
         cell.selectionStyle = UITableViewCell.SelectionStyle.none
-        cell.textLabel?.text = mollArray[indexPath.row]
+        cell.textLabel?.text = items[tag][indexPath.row] as? String
         cell.textLabel?.textColor = .black
         return cell
     }
-
+    
 }
 
