@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tZb-49-AbT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="r2x-4p-CPT">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="お店を探す" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n81-of-5MA">
-                                <rect key="frame" x="147.66666666666666" y="108" width="95" height="35"/>
+                                <rect key="frame" x="147.66666666666666" y="64" width="95" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="1d9-q1-1pa"/>
                                     <constraint firstAttribute="width" constant="95" id="hCd-n7-S6p"/>
@@ -30,7 +30,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G4k-lQ-8WV">
-                                <rect key="frame" x="282.66666666666669" y="108" width="90" height="30"/>
+                                <rect key="frame" x="282.66666666666669" y="64" width="90" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="kTe-Xb-5AO"/>
                                     <constraint firstAttribute="width" constant="90" id="s57-J3-BrC"/>
@@ -65,29 +65,8 @@
             </objects>
             <point key="canvasLocation" x="2470.7692307692305" y="95.97156398104265"/>
         </scene>
-        <!--店舗検索-->
-        <scene sceneID="JbU-rd-lMH">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tZb-49-AbT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="店舗検索" image="mappin.and.ellipse" catalog="system" id="Ms9-RT-xtm"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TVj-Gu-Qhb">
-                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="r2x-4p-CPT" kind="relationship" relationship="rootViewController" id="I1g-bS-lLM"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hLl-eU-4jq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1541.5384615384614" y="95.97156398104265"/>
-        </scene>
     </scenes>
     <resources>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
-        <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
     </resources>
 </document>

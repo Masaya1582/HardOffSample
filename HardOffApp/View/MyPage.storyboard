@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="I9E-lF-mQt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Iof-dS-mDI">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bVa-JJ-U17">
-                                <rect key="frame" x="0.0" y="148" width="390" height="1769"/>
+                                <rect key="frame" x="0.0" y="104" width="390" height="1813"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NW8-2p-nGP">
                                         <rect key="frame" x="0.0" y="0.0" width="390" height="2000"/>
@@ -333,7 +333,7 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="LWc-bm-Zxu"/>
                             </scrollView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="マイページ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vV2-th-zue">
-                                <rect key="frame" x="70" y="98" width="250" height="30"/>
+                                <rect key="frame" x="70" y="54" width="250" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="3B5-cl-Cak"/>
                                     <constraint firstAttribute="width" constant="250" id="KjC-M6-tCc"/>
@@ -372,25 +372,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z9A-Vw-V4D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3211.594202898551" y="839.0625"/>
-        </scene>
-        <!--マイページ-->
-        <scene sceneID="89b-Kg-Rz3">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="I9E-lF-mQt" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="マイページ" image="person" catalog="system" id="21y-xE-QDD"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qEG-Rw-lEz">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Iof-dS-mDI" kind="relationship" relationship="rootViewController" id="6R5-MG-E2p"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0le-pp-e6U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2301.449275362319" y="839.0625"/>
         </scene>
     </scenes>
     <resources>
