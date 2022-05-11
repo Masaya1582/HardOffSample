@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search View Controller-->
+        <scene sceneID="bVu-V9-JVR">
+            <objects>
+                <viewController storyboardIdentifier="Search" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ekR-Wo-yG0" customClass="SearchViewController" customModule="HardOffApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SoS-1R-ipp">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="お店を探す" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4v-8Y-gqJ">
+                                <rect key="frame" x="147.66666666666666" y="64" width="95" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="eFZ-Ee-50Y"/>
+                                    <constraint firstAttribute="width" constant="95" id="prs-eK-X6Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M1B-Da-GcV">
+                                <rect key="frame" x="0.0" y="107" width="390" height="654"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EgE-Oi-Uwr">
+                                <rect key="frame" x="282.66666666666669" y="64" width="90" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="EnI-5F-7gY"/>
+                                    <constraint firstAttribute="height" constant="30" id="lIy-80-i12"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="現在地">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="currentLocation:" destination="ekR-Wo-yG0" eventType="touchUpInside" id="wEO-7v-WyQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Hp4-gH-CuJ"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="A4v-8Y-gqJ" firstAttribute="top" secondItem="Hp4-gH-CuJ" secondAttribute="top" constant="20" id="7jV-X8-RBz"/>
+                            <constraint firstItem="A4v-8Y-gqJ" firstAttribute="centerX" secondItem="SoS-1R-ipp" secondAttribute="centerX" id="85e-5F-t18"/>
+                            <constraint firstItem="EgE-Oi-Uwr" firstAttribute="leading" secondItem="A4v-8Y-gqJ" secondAttribute="trailing" constant="40" id="frc-mM-ewO"/>
+                            <constraint firstItem="EgE-Oi-Uwr" firstAttribute="top" secondItem="Hp4-gH-CuJ" secondAttribute="top" constant="20" id="kif-yw-gPr"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="2" systemItem="search" id="Rld-Wo-z5C"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="shopLabel" destination="A4v-8Y-gqJ" id="gfa-z1-LUx"/>
+                        <outlet property="shopmap" destination="M1B-Da-GcV" id="GsH-nn-lba"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NxL-pj-Bc2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2470.7692307692305" y="95.97156398104265"/>
+        </scene>
+    </scenes>
+</document>
