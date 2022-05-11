@@ -12,8 +12,10 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var lottieView: LottieView!
     
-    //店舗リストの項目
-    private let shopArray = ["四日市店", "桑名店","朝日店","日永店","津店"]
+    //cellのID
+    private var cellIdentifier = "shopCell"
+    //ボタン等の角を丸くする
+    private let cornerRadius: CGFloat = 10.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,17 +31,17 @@ class HomeViewController: UIViewController {
     
     //UIの初期設定
     private func setupView(){
-        shopbutton.layer.cornerRadius = 10.0
-        statusButton.layer.cornerRadius = 10.0
-        carImgeView.image = UIImage(named: "car.png")
-        codeImageView.image = UIImage(named: "barcode.svg")
+        shopbutton.layer.cornerRadius = cornerRadius
+        statusButton.layer.cornerRadius = cornerRadius
+        carImgeView.image = ConstUIImage.car
+        codeImageView.image = ConstUIImage.barcode
     }
     
     //tableViewの初期設定
     private func setupTV() {
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(UINib(nibName: "HomeTableViewCell", bundle: nil), forCellReuseIdentifier: "shopCell")
+        tableView.register(UINib(nibName: "HomeTableViewCell", bundle: nil), forCellReuseIdentifier: cellIdentifier)
     }
     
     //lottieファイルの設定
@@ -59,12 +61,12 @@ class HomeViewController: UIViewController {
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return shopArray.count
+        return ShopData.shopArray.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "shopCell", for: indexPath) as! HomeTableViewCell
-        cell.hardoffImageView.image = UIImage(named: "hardoff.jpeg")
-        cell.shopLabel.text = shopArray[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! HomeTableViewCell
+        cell.hardoffImageView.image = ConstUIImage.hardoff
+        cell.shopLabel.text = ShopData.shopArray[indexPath.row]
         return cell
     }
     
