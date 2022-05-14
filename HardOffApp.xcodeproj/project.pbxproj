@@ -30,6 +30,7 @@
 		40D3EE8C282B53D9006BE994 /* Shopping.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40D3EE8B282B53D9006BE994 /* Shopping.storyboard */; };
 		40D3EE8E282B5440006BE994 /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40D3EE8D282B5440006BE994 /* MyPage.storyboard */; };
 		40D3EE92282BA0F8006BE994 /* ConstantsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D3EE91282BA0F8006BE994 /* ConstantsData.swift */; };
+		40D3EF02282F9265006BE994 /* bar.json in Resources */ = {isa = PBXBuildFile; fileRef = 40D3EF01282F9265006BE994 /* bar.json */; };
 		DAEF4542B63814414691E5AD /* Pods_HardOffApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 801265A387BE1B74F8A923C4 /* Pods_HardOffApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		40D3EE8B282B53D9006BE994 /* Shopping.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Shopping.storyboard; sourceTree = "<group>"; };
 		40D3EE8D282B5440006BE994 /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
 		40D3EE91282BA0F8006BE994 /* ConstantsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsData.swift; sourceTree = "<group>"; };
+		40D3EF01282F9265006BE994 /* bar.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bar.json; sourceTree = "<group>"; };
 		6155C08BE4CB27FC365BFB04 /* Pods-HardOffApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HardOffApp.release.xcconfig"; path = "Target Support Files/Pods-HardOffApp/Pods-HardOffApp.release.xcconfig"; sourceTree = "<group>"; };
 		801265A387BE1B74F8A923C4 /* Pods_HardOffApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HardOffApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -113,6 +115,7 @@
 				40926EF1282760A80027A51C /* Info.plist */,
 				40926F2C2828996A0027A51C /* pc.json */,
 				40926F2E2828A4C20027A51C /* car.json */,
+				40D3EF01282F9265006BE994 /* bar.json */,
 			);
 			path = HardOffApp;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				40926EED282760A80027A51C /* Assets.xcassets in Resources */,
 				40D3EE8C282B53D9006BE994 /* Shopping.storyboard in Resources */,
 				40926F2F2828A4C20027A51C /* car.json in Resources */,
+				40D3EF02282F9265006BE994 /* bar.json in Resources */,
 				40D3EE88282B5318006BE994 /* Search.storyboard in Resources */,
 				40926F09282768B40027A51C /* HomeTableViewCell.xib in Resources */,
 				40D3EE8E282B5440006BE994 /* MyPage.storyboard in Resources */,

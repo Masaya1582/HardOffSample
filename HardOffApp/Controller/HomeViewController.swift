@@ -5,13 +5,13 @@ import Lottie
 
 class HomeViewController: UIViewController {
     
-    @IBOutlet weak var statusButton: UIButton!
     @IBOutlet weak var carImgeView: UIImageView!
     @IBOutlet weak var shopbutton: UIButton!
     @IBOutlet weak var codeImageView: UIImageView!
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var lottieView: LottieView!
-    
+    @IBOutlet weak var lottiePCView: LottieView!
+    @IBOutlet weak var lottieBarView: LottieView!
+
     //cellのID
     private var cellIdentifier = "shopCell"
     //ボタン等の角を丸くする
@@ -26,13 +26,13 @@ class HomeViewController: UIViewController {
     //アニメーションの再生を開始する
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        showAnimation()
+        showPCAnimation()
+        showBarAnimation()
     }
     
     //UIの初期設定
     private func setupView(){
         shopbutton.layer.cornerRadius = cornerRadius
-        statusButton.layer.cornerRadius = cornerRadius
         carImgeView.image = ConstUIImage.car
         codeImageView.image = ConstUIImage.barcode
     }
@@ -44,11 +44,22 @@ class HomeViewController: UIViewController {
         tableView.register(UINib(nibName: "HomeTableViewCell", bundle: nil), forCellReuseIdentifier: cellIdentifier)
     }
     
-    //lottieファイルの設定
-    private func showAnimation() {
+    //lottieファイルの設定(センターポジションのアニメーション)
+    private func showPCAnimation() {
         let animationView = AnimationView(name: "pc")
-        animationView.frame = lottieView.bounds
-        animationView.center = self.lottieView.center
+        animationView.frame = lottiePCView.bounds
+        animationView.center = self.lottiePCView.center
+        animationView.loopMode = .loop
+        animationView.animationSpeed = 1
+        view.addSubview(animationView)
+        animationView.play()
+    }
+    
+    //lottieファイルの設定(ステータスバーのアニメーション)
+    private func showBarAnimation() {
+        let animationView = AnimationView(name: "bar")
+        animationView.frame = lottieBarView.bounds
+        animationView.center = self.lottieBarView.center
         animationView.loopMode = .loop
         animationView.animationSpeed = 1
         view.addSubview(animationView)

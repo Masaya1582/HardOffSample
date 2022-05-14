@@ -42,13 +42,6 @@
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHg-bc-NGn">
-                                        <rect key="frame" x="44" y="105" width="120" height="14"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain"/>
-                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="利用可能" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kI7-w3-RPS">
                                         <rect key="frame" x="44" y="239" width="49.333333333333336" height="14.333333333333334"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -98,6 +91,11 @@
                                     </label>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XSx-Sx-ikX" customClass="LottieView" customModule="Lottie">
                                         <rect key="frame" x="135" y="172" width="120" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oC1-r8-bog" customClass="LottieView" customModule="Lottie">
+                                        <rect key="frame" x="8" y="89" width="175" height="42"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
@@ -152,9 +150,9 @@
                     <connections>
                         <outlet property="carImgeView" destination="yuz-Hv-g5h" id="AXw-Gu-oxs"/>
                         <outlet property="codeImageView" destination="goX-tj-YdE" id="yJA-Qt-ByQ"/>
-                        <outlet property="lottieView" destination="XSx-Sx-ikX" id="ySa-vb-J3F"/>
+                        <outlet property="lottieBarView" destination="oC1-r8-bog" id="v9J-UQ-Ukd"/>
+                        <outlet property="lottiePCView" destination="XSx-Sx-ikX" id="ySa-vb-J3F"/>
                         <outlet property="shopbutton" destination="7eh-3w-5hP" id="uIP-3p-hBE"/>
-                        <outlet property="statusButton" destination="gHg-bc-NGn" id="Vga-jL-toY"/>
                         <outlet property="tableView" destination="B9f-PV-6zz" id="ez5-iF-vH2"/>
                     </connections>
                 </viewController>
@@ -167,9 +165,6 @@
         <image name="homekit" catalog="system" width="128" height="106"/>
         <systemColor name="systemMintColor">
             <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

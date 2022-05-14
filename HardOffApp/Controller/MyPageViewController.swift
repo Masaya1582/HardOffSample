@@ -14,6 +14,7 @@ class MyPageViewController: UIViewController {
     @IBOutlet private weak var thirdView: UIView!
     @IBOutlet private weak var forthView: UIView!
     @IBOutlet private weak var fifthView: UIView!
+    @IBOutlet private weak var sixthView: UIView!
     @IBOutlet private weak var imageView: UIImageView!
     @IBOutlet private weak var tableView1: UITableView!
     @IBOutlet private weak var tableView2: UITableView!
@@ -39,6 +40,7 @@ class MyPageViewController: UIViewController {
         thirdView.layer.cornerRadius = borderRadius
         forthView.layer.cornerRadius = borderRadius
         fifthView.layer.cornerRadius = borderRadius
+        sixthView.layer.cornerRadius = borderRadius
         imageView.image = ConstUIImage.kaitori
     }
     
