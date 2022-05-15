@@ -51,6 +51,8 @@ class MyPageViewController: UIViewController {
         tableView1.dataSource = self
         tableView2.delegate = self
         tableView2.dataSource = self
+        tableView1.isScrollEnabled = false
+        tableView2.isScrollEnabled = false
         items.append(items1)
         items.append(items2)
     }
