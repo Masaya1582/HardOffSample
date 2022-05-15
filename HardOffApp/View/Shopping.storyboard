@@ -15,12 +15,41 @@
                     <view key="view" contentMode="scaleToFill" id="7rC-Zk-DDG">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="作成間に合いませんでした" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FcR-oU-WWc">
+                                <rect key="frame" x="45" y="74" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="OWW-c7-WVp"/>
+                                    <constraint firstAttribute="height" constant="30" id="iPA-LS-i4D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wva-JP-NRH" customClass="LottieView" customModule="Lottie">
+                                <rect key="frame" x="45" y="272" width="300" height="300"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Wva-JP-NRH" secondAttribute="height" multiplier="1:1" id="Cfk-lG-pIG"/>
+                                    <constraint firstAttribute="width" constant="300" id="a3a-6Z-fFK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="hZ4-mi-bPU"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Wva-JP-NRH" firstAttribute="centerY" secondItem="7rC-Zk-DDG" secondAttribute="centerY" id="3W4-d2-lCj"/>
+                            <constraint firstItem="Wva-JP-NRH" firstAttribute="centerX" secondItem="7rC-Zk-DDG" secondAttribute="centerX" id="IQW-3b-Sgr"/>
+                            <constraint firstItem="FcR-oU-WWc" firstAttribute="centerX" secondItem="7rC-Zk-DDG" secondAttribute="centerX" id="XVK-aH-DEk"/>
+                            <constraint firstItem="FcR-oU-WWc" firstAttribute="top" secondItem="hZ4-mi-bPU" secondAttribute="top" constant="30" id="kOc-Ji-1wv"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="ショッピング" image="bag" catalog="system" id="Xh5-LL-0Lt"/>
                     <navigationItem key="navigationItem" title="ショッピング" id="YBo-DH-l2x"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="lottieSorryView" destination="Wva-JP-NRH" id="DGy-to-LkA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IjR-D9-PET" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

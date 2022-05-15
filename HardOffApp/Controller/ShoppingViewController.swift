@@ -1,29 +1,30 @@
-//
-//  ShoppingViewController.swift
-//  HardOffApp
-//
-//  Created by Cookie-san on 2022/05/08.
-//
+
 
 import UIKit
+import Lottie
 
 class ShoppingViewController: UIViewController {
-
+    
+    @IBOutlet weak var lottieSorryView: LottieView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        showSorryAnimation()
     }
-    */
-
+    
+    //lottieファイルの設定(センターポジションのアニメーション)
+    private func showSorryAnimation() {
+        let animationView = AnimationView(name: "sorry")
+        animationView.frame = lottieSorryView.bounds
+        animationView.center = self.lottieSorryView.center
+        animationView.loopMode = .loop
+        animationView.animationSpeed = 1
+        view.addSubview(animationView)
+        animationView.play()
+    }
+    
 }
