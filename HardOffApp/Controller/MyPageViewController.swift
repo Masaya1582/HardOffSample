@@ -7,7 +7,7 @@ enum CellTag: Int {
     case aboutCell
 }
 
-class MyPageViewController: UIViewController {
+class MyPageViewController: UIViewController, UIGestureRecognizerDelegate {
     
     @IBOutlet private weak var firstView: UIView!
     @IBOutlet private weak var secondView: UIView!
@@ -32,6 +32,7 @@ class MyPageViewController: UIViewController {
         super.viewDidLoad()
         setupView()
         setupTV()
+        setupTGR()
     }
     
     private func setupView() {
@@ -57,7 +58,25 @@ class MyPageViewController: UIViewController {
         tableViewItems.append(aboutArray)
     }
     
+    @objc func tapped(_ sender: UITapGestureRecognizer){
+        if sender.state == .ended {
+            // 遷移先のURL
+            let url = NSURL(string: "https://www.hardoff.co.jp/")
+            UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil)
+        }
+    }
+    
+    private func setupTGR() {
+        let tapGesture:UITapGestureRecognizer = UITapGestureRecognizer(
+            target: self,
+            action: #selector(MyPageViewController.tapped(_:)))
+        // デリゲートをセット
+        tapGesture.delegate = self
+        self.view.addGestureRecognizer(tapGesture)
+    }
+    
 }
+
 
 //tableViewの表示設定
 extension MyPageViewController: UITableViewDelegate, UITableViewDataSource {
