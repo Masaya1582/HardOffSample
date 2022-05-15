@@ -18,9 +18,10 @@ class MyPageViewController: UIViewController {
     @IBOutlet private weak var imageView: UIImageView!
     @IBOutlet private weak var tableView1: UITableView!
     @IBOutlet private weak var tableView2: UITableView!
+    @IBOutlet weak var logout: UIButton!
     
     private var items1: NSMutableArray = ["注文履歴", "送料計算リスト"]
-    private var items2: NSMutableArray = ["テスト","テスト","テスト","テスト","テスト","テスト",]
+    private var items2: NSMutableArray = ["初めての方へ","エコボとは","よくある質問","お問合せ","ご意見フォーム","ランクについて","ハードオフアプリ利用規約", "オフモール利用規約", "プライバシーポリシー"]
     private var items: [NSMutableArray] = []
     
     // 処理分岐用
@@ -41,6 +42,7 @@ class MyPageViewController: UIViewController {
         forthView.layer.cornerRadius = borderRadius
         fifthView.layer.cornerRadius = borderRadius
         sixthView.layer.cornerRadius = borderRadius
+        logout.layer.cornerRadius = borderRadius
         imageView.image = ConstUIImage.kaitori
     }
     
