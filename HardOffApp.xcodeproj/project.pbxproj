@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		40926EE4282760A80027A51C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40926EE3282760A80027A51C /* AppDelegate.swift */; };
 		40926EE6282760A80027A51C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40926EE5282760A80027A51C /* SceneDelegate.swift */; };
-		40926EEB282760A80027A51C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40926EE9282760A80027A51C /* Main.storyboard */; };
+		40926EEB282760A80027A51C /* TabCollection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40926EE9282760A80027A51C /* TabCollection.storyboard */; };
 		40926EED282760A80027A51C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40926EEC282760A80027A51C /* Assets.xcassets */; };
 		40926EF0282760A80027A51C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40926EEE282760A80027A51C /* LaunchScreen.storyboard */; };
 		40926EF8282761350027A51C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40926EF7282761350027A51C /* HomeViewController.swift */; };
@@ -39,7 +39,7 @@
 		40926EE0282760A80027A51C /* HardOffApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HardOffApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40926EE3282760A80027A51C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40926EE5282760A80027A51C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		40926EEA282760A80027A51C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		40926EEA282760A80027A51C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TabCollection.storyboard; sourceTree = "<group>"; };
 		40926EEC282760A80027A51C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40926EEF282760A80027A51C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40926EF1282760A80027A51C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -137,7 +137,7 @@
 		40926F04282768610027A51C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				40926EE9282760A80027A51C /* Main.storyboard */,
+				40926EE9282760A80027A51C /* TabCollection.storyboard */,
 				40D3EE85282B52B8006BE994 /* Home.storyboard */,
 				40D3EE87282B5318006BE994 /* Search.storyboard */,
 				40D3EE89282B537F006BE994 /* Travel.storyboard */,
@@ -255,7 +255,7 @@
 				40926F09282768B40027A51C /* HomeTableViewCell.xib in Resources */,
 				40D3EE8E282B5440006BE994 /* MyPage.storyboard in Resources */,
 				40926F2D2828996A0027A51C /* pc.json in Resources */,
-				40926EEB282760A80027A51C /* Main.storyboard in Resources */,
+				40926EEB282760A80027A51C /* TabCollection.storyboard in Resources */,
 				40D3EE8A282B537F006BE994 /* Travel.storyboard in Resources */,
 				40D3EE86282B52B8006BE994 /* Home.storyboard in Resources */,
 			);
@@ -327,12 +327,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		40926EE9282760A80027A51C /* Main.storyboard */ = {
+		40926EE9282760A80027A51C /* TabCollection.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				40926EEA282760A80027A51C /* Base */,
 			);
-			name = Main.storyboard;
+			name = TabCollection.storyboard;
 			sourceTree = "<group>";
 		};
 		40926EEE282760A80027A51C /* LaunchScreen.storyboard */ = {
@@ -476,7 +476,7 @@
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "ユーザの現在位置を取得します(本番では詳細に記載する)";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = TabCollection;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -510,7 +510,7 @@
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "ユーザの現在位置を取得します(本番では詳細に記載する)";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = TabCollection;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
